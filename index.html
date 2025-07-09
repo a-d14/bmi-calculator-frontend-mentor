@@ -2,20 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Body Mass Index Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Body Mass Index Calculator</title>
 </head>
 <body>
+  <main>
+    <section class="hero">
+      <img width="64" height="64" src="assets/images/logo.svg" alt="logo" />
+      <h1>Body Mass Index Calculator</h1>
+      <p>Better understand your weight in relation to your height using our 
+        body mass index (BM) calculator. While BMI is not the sole determinant 
+        of a healthy weight, it offers a valuable starting point to evaluate 
+        your overall health and well-being.
+      </p>
+      <div>
+        <h2>Enter your details below</h2>
+        <form>
+          <fieldset aria-describedby="unit-error">
+            <legend>Select Unit System</legend>
+            <div>
+              <input type="radio" id="metric" name="unit-system" /> 
+              <label for="metric">Metric</label>
+            </div>
+            
+            <div>
+              <input type="radio" id="imperial" name="unit-system" /> 
+              <label for="imperial">Imperial</label>
+            </div>
 
-  Body Mass Index Calculator
+            <p id="unit-error" aria-live="polite">Please select a unit system.</p>
+          </fieldset>
+          <fieldset>
+            <legend>Enter Weight and Height Data</legend>
+            <div>
+              <label>Weight</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>Height</label>
+              <input type="text" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+  
 
-  Better understand your weight in relation to your height using our 
-  body mass index (BM) calculator. While BMI is not the sole determinant 
-  of a healthy weight, it offers a valuable starting point to evaluate 
-  your overall health and well-being.
+  
 
   Enter your details below
 
